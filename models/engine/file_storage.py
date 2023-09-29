@@ -80,4 +80,4 @@ class FileStorage:
         """Return the number of objects in strage"""
         if cls is not None:
             return len(self.all(cls))
-        return len(self.objects)
+        return len(self.__objects)
