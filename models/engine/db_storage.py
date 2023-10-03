@@ -90,5 +90,5 @@ class DBStorage:
         total = 0
         for clss in classes:
             if cls is None or cls is classes[clss] or cls is clss:
-                total += len(self.session.query(classes[clss].all()))
+                total += len(self.__session.query(classes[clss]).all())
         return total
